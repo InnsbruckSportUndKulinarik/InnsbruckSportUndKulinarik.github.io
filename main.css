@@ -17,16 +17,9 @@ header>img {
 main {
     max-width: 1024px;
     margin: auto;
-    margin-top: -25px;
-    border-left: 1px dashed silver;
-    border-right: 1px dashed silver;
-    border-bottom: 1px dashed silver;
+    margin-top: 25px;
 }
 
-/* Platzhalter zwischen Außenlinie und Text*/
-article {
-    padding: 1em;
-}
 
 article p {
     font-family: 'Roboto', sans-serif;
@@ -99,4 +92,20 @@ nav {
   nav ul li ul li a:hover {
     background-color: #555;
   }
+
+  .slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
   
