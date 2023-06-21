@@ -98,7 +98,7 @@ nav {
     max-width: 100%;
     overflow: hidden;
   }
-  
+    /* slide-show */
   .slide {
     display: none;
     width: 100%;
@@ -108,4 +108,12 @@ nav {
     display: block;
   }
   
+  .slide2 {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide2.active {
+    display: block;
+  }
   
