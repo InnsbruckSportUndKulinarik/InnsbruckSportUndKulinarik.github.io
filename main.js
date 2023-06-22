@@ -60,3 +60,26 @@ function prevSlide2() {
   
   showSlide2();
 
+// Bildunterschrift des aktuellen Bilds
+function showCaption() {
+    let captions = document.getElementsByClassName("caption");
+    
+    for (let i = 0; i < captions.length; i++) {
+      captions[i].style.display = "none";
+    }
+    
+    captions[currentSlide].style.display = "block";
+  }
+  
+  function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+    showSlide();
+    showCaption(); // Aufruf der showCaption-Funktion nach dem Bildwechsel
+  }
+  
+  setInterval(nextSlide, 4000);
+  
+  
