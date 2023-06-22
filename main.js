@@ -1,13 +1,15 @@
-
 //Slideshow 1
 let slides = document.getElementsByClassName("slide");
+let captions = document.getElementsByClassName("caption");
 let currentSlide = 0;
 
 function showSlide() {
-  for (var i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("active");
+    captions[i].style.display = "none";
   }
   slides[currentSlide].classList.add("active");
+  captions[currentSlide].style.display = "block";
 }
 
 function nextSlide() {
@@ -18,29 +20,10 @@ function nextSlide() {
   showSlide();
 }
 
-setInterval(nextSlide, 4000); 
+setInterval(nextSlide, 4000);
 
-// Slideshow 1 Bildunterschrift des aktuellen Bilds
-function showCaption() {
-    let captions = document.getElementsByClassName("caption");
-    
-    for (let i = 0; i < captions.length; i++) {
-      captions[i].style.display = "none";
-    }
-    
-    captions[currentSlide].style.display = "block";
-  }
-  
-  function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-      currentSlide = 0;
-    }
-    showSlide();
-    showCaption(); // Aufruf der showCaption-Funktion nach dem Bildwechsel
-  }
-  
-  setInterval(nextSlide, 4000);
+showSlide();
+
 
 //Slideshow 2
 let slides2 = document.getElementsByClassName("slide2");
@@ -78,7 +61,7 @@ document.getElementById("nextButton").addEventListener("click", nextSlide2);
 showSlide2();
 
 
-  // Slideshow 2 Bildunterschrift des aktuellen Bilds
+
 
 
 
