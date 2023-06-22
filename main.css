@@ -127,3 +127,28 @@ nav {
     display: block;
   }
   
+  .slideshow2 {
+    position: relative;
+  }
+  
+  #prevButton,
+  #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  #prevButton {
+    left: 5px;
+  }
+  
+  #nextButton {
+    right: 5px;
+  }
+  

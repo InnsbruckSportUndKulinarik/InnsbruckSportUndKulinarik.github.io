@@ -24,7 +24,6 @@ setInterval(nextSlide, 4000);
 
 showSlide();
 
-
 //Slideshow 2
 let slides2 = document.getElementsByClassName("slide2");
 let captions2 = document.getElementsByClassName("caption2");
