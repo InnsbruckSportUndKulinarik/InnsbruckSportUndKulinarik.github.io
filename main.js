@@ -20,47 +20,7 @@ function nextSlide() {
 
 setInterval(nextSlide, 4000); 
 
-//Slideshow 2
-let slides2 = document.getElementsByClassName("slide2");
-let currentSlide2 = 0;
-
-function showSlide2() {
-  for (var i = 0; i < slides2.length; i++) {
-    slides2[i].classList.remove("active");
-  }
-  slides2[currentSlide2].classList.add("active");
-}
-
-function nextSlide2() {
-  currentSlide2++;
-  if (currentSlide2 >= slides2.length) {
-    currentSlide2 = 0;
-  }
-  showSlide2();
-}
-
-function prevSlide2() {
-  currentSlide2--;
-  if (currentSlide2 < 0) {
-    currentSlide2 = slides2.length - 1;
-  }
-  showSlide2();
-}
-
-function prevSlide2() {
-    currentSlide2--;
-    if (currentSlide2 < 0) {
-      currentSlide2 = slides2.length - 1;
-    }
-    showSlide2();
-  }
-  
-  document.getElementById("prevButton").addEventListener("click", prevSlide2);
-  document.getElementById("nextButton").addEventListener("click", nextSlide2);
-  
-  showSlide2();
-
-// Bildunterschrift des aktuellen Bilds
+// Slideshow 1 Bildunterschrift des aktuellen Bilds
 function showCaption() {
     let captions = document.getElementsByClassName("caption");
     
@@ -81,5 +41,46 @@ function showCaption() {
   }
   
   setInterval(nextSlide, 4000);
+
+//Slideshow 2
+let slides2 = document.getElementsByClassName("slide2");
+let captions2 = document.getElementsByClassName("caption2");
+let currentSlide2 = 0;
+
+function showSlide2() {
+  for (let i = 0; i < slides2.length; i++) {
+    slides2[i].classList.remove("active");
+    captions2[i].style.display = "none";
+  }
+  slides2[currentSlide2].classList.add("active");
+  captions2[currentSlide2].style.display = "block";
+}
+
+function nextSlide2() {
+  currentSlide2++;
+  if (currentSlide2 >= slides2.length) {
+    currentSlide2 = 0;
+  }
+  showSlide2();
+}
+
+function prevSlide2() {
+  currentSlide2--;
+  if (currentSlide2 < 0) {
+    currentSlide2 = slides2.length - 1;
+  }
+  showSlide2();
+}
+
+document.getElementById("prevButton").addEventListener("click", prevSlide2);
+document.getElementById("nextButton").addEventListener("click", nextSlide2);
+
+showSlide2();
+
+
+  // Slideshow 2 Bildunterschrift des aktuellen Bilds
+
+
+
   
   
