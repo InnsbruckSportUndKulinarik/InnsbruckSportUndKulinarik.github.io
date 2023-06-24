@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     background-color: rgb(234, 234, 234);
     max-width: 1280px;
     margin: auto;
@@ -17,25 +17,27 @@ header>img {
 h1 {
     text-align: center;
     font-size: xx-large;
+    font-stretch: extra-expanded;
+    font-weight: 800;
   }
   
 main {
     max-width: 1024px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 
 article p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     text-align: justify;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 article h1,
 article h2,
 article h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto';
 }
 
 article figure>img {
@@ -98,12 +100,14 @@ nav {
     background-color: #555;
   }
 
+   /* slide-show */
+
   .slideshow {
     position: relative;
     max-width: 100%;
     overflow: hidden;
   }
-    /* slide-show */
+ 
   .slide {
     display: none;
     width: 100%;
@@ -112,7 +116,8 @@ nav {
   .slide.active {
     display: block;
   }
-  
+     /* slide-show2 */
+
   .slide2 {
     display: none;
     width: 100%;
@@ -120,5 +125,30 @@ nav {
   
   .slide2.active {
     display: block;
+  }
+  
+  .slideshow2 {
+    position: relative;
+  }
+  
+  #prevButton,
+  #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  #prevButton {
+    left: 5px;
+  }
+  
+  #nextButton {
+    right: 5px;
   }
   
