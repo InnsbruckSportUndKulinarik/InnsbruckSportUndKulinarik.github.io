@@ -1,3 +1,4 @@
+
 /* Google Schriftarten */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
 
@@ -18,8 +19,8 @@ h1 {
     font-size: xx-large;
     font-stretch: extra-expanded;
     font-weight: 800;
-}
-
+  }
+  
 main {
     max-width: 1024px;
     margin: auto;
@@ -47,92 +48,90 @@ article figure>img {
     box-shadow:
         0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.2);
-
 }
-
 /* Stile für das Menüband */
 nav {
     background-color: #333;
     padding: 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline-block;
     position: relative;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #fff;
     padding: 10px;
     text-decoration: none;
-}
-
-nav ul li:hover>a {
+  }
+  
+  nav ul li:hover > a {
     background-color: #555;
-}
-
-/* Dropdown-Menüs */
-nav ul li ul {
+  }
+  
+  /* Dropdown-Menüs */
+  nav ul li ul {
     display: none;
     position: absolute;
     background-color: #333;
     top: 100%;
     left: 3px;
-}
-
-nav ul li:hover>ul {
+    bottom: -240%;
+  }
+  
+  nav ul li:hover > ul {
     display: inherit;
     top: auto;
-}
-
-nav ul li ul li {
+  }
+  
+  nav ul li ul li {
     display: block;
-}
-
-nav ul li ul li a:hover {
+  }
+  
+  nav ul li ul li a:hover {
     background-color: #555;
-}
+  }
+   
+   /* slide-show */
 
-/* slide-show */
-
-.slideshow {
+  .slideshow {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-}
-
-.slide {
+  }
+ 
+  .slide {
     display: none;
     width: 100%;
-}
-
-.slide.active {
+  }
+  
+  .slide.active {
     display: block;
-}
+  }
+     /* slide-show2 */
 
-/* slide-show2 */
-
-.slide2 {
+  .slide2 {
     display: none;
     width: 100%;
-}
-
-.slide2.active {
+  }
+  
+  .slide2.active {
     display: block;
-}
-
-.slideshow2 {
+  }
+  
+  .slideshow2 {
     position: relative;
-}
-
-#prevButton,
-#nextButton {
+  }
+  
+  #prevButton,
+  #nextButton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -142,20 +141,20 @@ nav ul li ul li a:hover {
     border: none;
     color: #000000;
     cursor: pointer;
-}
-
-#prevButton {
+  }
+  
+  #prevButton {
     left: 5px;
-}
-
-#nextButton {
+  }
+  
+  #nextButton {
     right: 5px;
-}
-
-/* Impressum */
-.inline-list li {
+  }
+  /* Impressum */  
+  .inline-list li {
     display: inline-block;
     margin-right: 30px;
     font-family: "Roboto";
     font-size: smaller;
-}
+  }
+  
