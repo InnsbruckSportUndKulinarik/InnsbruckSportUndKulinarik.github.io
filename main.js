@@ -21,7 +21,6 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 4000);
-
 showSlide();
 
 //Slideshow 2
