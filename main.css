@@ -51,7 +51,7 @@ article figure>img {
 /* Stile für das Menüband */
 nav {
   background-color: #333;
-  padding: 20px;
+  padding: 16px;
   margin-top: -5px;
 }
 
@@ -71,8 +71,6 @@ nav ul li a {
   padding: 15px;
   text-decoration: none;
   font-size: 22px;
-  font-weight: bold;
-
 }
 
 nav ul li:hover>a {
