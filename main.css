@@ -27,7 +27,6 @@ main {
     margin-top: 40px;
 }
 
-
 article p {
     font-family: 'Roboto';
     text-align: justify;
@@ -160,8 +159,22 @@ nav ul li ul li a:hover {
     right: 5px;
   }
   /* Impressum */  
+  footer {
+    text-align: center;
+  }
+  
+  #impressum {
+    font-weight: bold;
+  }
+  
+  .inline-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
   .inline-list li {
-    display: inline-block;
     margin-right: 30px;
     font-family: "Roboto";
     font-size: smaller;
