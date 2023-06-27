@@ -50,42 +50,44 @@ article figure>img {
 }
 /* Stile für das Menüband */
 nav {
-    background-color: #333;
-    padding: 10px;
-    margin-top: -5px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    position: relative;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  nav ul li:hover > a {
-    background-color: #555;
-  }
-  
+  background-color: #333;
+  padding: 20px;
+  margin-top: -5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+nav ul li:hover>a {
+  background-color: #555;
+}
+
 /* Dropdown-Menüs */
 nav ul li ul {
   position: absolute;
   background-color: #333;
-  top: 100%;
-  left: 3px;
+  top: 40px;
+  left: 5px;
   width: 200px; /* Anpassen der Breite */
   height: 0; /* Anpassen der Höhe */
   overflow: hidden; /* Ausblenden des Inhalts */
-  transition: height 0.3s ease; /* Animierter Übergang der Höhe */
   display: flex; /* Hinzufügen der flex-Eigenschaft */
   flex-direction: column; /* Anordnung der Elemente in Spalten */
   justify-content: space-between; /* Gleichmäßige Verteilung der Elemente */
@@ -98,6 +100,11 @@ nav ul li:hover > ul {
 
 nav ul li ul li {
   display: block;
+}
+
+nav ul li ul li a {
+  font-size: 16px; /* Kleinere Schriftgröße für die Menüpunkte im Dropdown-Menü */
+  line-height: 1.5;
 }
 
 nav ul li ul li a:hover {
